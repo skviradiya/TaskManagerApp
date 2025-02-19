@@ -6,11 +6,17 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import AuthStack from "./AuthStack";
 import UserStack from "./UserStack";
+import colors from "@App/constants/colors";
 
 const Stack = createNativeStackNavigator<MainStackNavigationParams>();
 export default function MainStack() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: colors.background },
+      }}
+    >
       <Stack.Screen component={SplashScreen} name={screens.SplashScreen} />
       <Stack.Screen component={AuthStack} name={screens.AuthStack} />
       <Stack.Screen component={UserStack} name={screens.UserStack} />

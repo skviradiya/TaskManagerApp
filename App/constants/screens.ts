@@ -1,10 +1,10 @@
 export enum screens {
   SplashScreen = 'SplashScreen',
-  SingInScreen = 'SingInScreen',
+  SignInScreen = 'SignInScreen',
   RegisterScreen = 'RegisterScreen',
   HomeScreen = 'HomeScreen',
   AuthStack = 'AuthStack',
   UserStack = 'UserStack',
-
-
+  TaskDetails = 'TaskDetails',
+  TaskForm = 'TaskForm',
 }
